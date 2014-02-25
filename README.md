@@ -23,7 +23,7 @@ scientific notation where `p = n - 1`.
 
 	>>> x = 0.0120076
 
-The significant figures of `x` are 0.0**120076**, so `x` expressed to
+The significant figures of `x` are 0.0[120076], so `x` expressed to
 3 significant figures *should be* 0.0120. This can be expressed
 correctly in scientific notation: 
 
@@ -60,7 +60,7 @@ but it is misleading. Consider:
 	>>> '%.16f' % 2.007
 	'2.0070000000000001'
 
-Here, any zero at or after the 5th digit (i.e. 2.007**0**...) is
+Here, any zero at or after the 5th digit (i.e. 2.007[0...]) is
 technically "insignificant" in the context of the floating point
 representation of the decimal. However, this has the unfortunate side
 effect of treating all trailing zeros after truncation as
